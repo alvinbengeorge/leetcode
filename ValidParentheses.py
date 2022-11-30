@@ -5,7 +5,6 @@ class Solution:
             '}': '{',
             ')': '('
         }
-        reverseBrackets = {v: k for k, v in brackets.items()}
         stack = ""
         if any([s.startswith(i) for i in brackets]): return False
         for i in s:
